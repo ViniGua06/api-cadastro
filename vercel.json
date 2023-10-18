@@ -1,11 +1,5 @@
 {
-  "name": "api-imoveis",
   "version": 2,
-  "routes": [
-    {
-      "src": "/api/.*",
-      "methods": ["GET", "POST", "PUT", "DELETE"],
-      "dest": "/src/index.js"
-    }
-  ]
+  "builds": [{ "src": "src/index.js", "use": "@now/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "src?index.js" }]
 }
