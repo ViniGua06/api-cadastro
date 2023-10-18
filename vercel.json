@@ -1,6 +1,15 @@
 {
-  "name": "vercel-project",
   "version": 2,
-  "builds": [{ "src": "src/index.js", "use": "@now/node" }],
-  "routes": [{ "src": "/src/index.js", "dest": "/src/index.js" }]
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/index.js"
+    }
+  ]
 }
