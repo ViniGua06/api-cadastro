@@ -7,7 +7,7 @@ const db = require("./db");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
-app.use(express.jaon());
+app.use(express.json());
 
 app.use(cors());
 app.use(bodyParser.json());
