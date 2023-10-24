@@ -8,7 +8,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const corsOptions = {
-  origin: "https://imoveiscadastro.netlify.app/",
+  origin: "https://imoveiscadastro.netlify.app",
 };
 
 app.use(cors(corsOptions));
