@@ -2,13 +2,7 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 2000;
 
-const mysql = require("mysql2");
-const db = mysql.createPool({
-  host: "localhost",
-  user: "root",
-  password: "Mel060616",
-  database: "outro_projeto_db",
-});
+const db = require("./db");
 
 const cors = require("cors");
 const bodyParser = require("body-parser");
